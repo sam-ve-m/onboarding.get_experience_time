@@ -3,7 +3,7 @@ from typing import Union
 from etria_logger import Gladsheim
 from mnemosine import SyncCache
 
-from func.src.core.interfaces.repository.enum_experience_time_cache.interface import IEnumExperienceTimeCacheRepository
+from src.core.interfaces.repository.enum_experience_time_cache.interface import IEnumExperienceTimeCacheRepository
 
 
 class EnumExperienceTimeCacheRepository(IEnumExperienceTimeCacheRepository):
