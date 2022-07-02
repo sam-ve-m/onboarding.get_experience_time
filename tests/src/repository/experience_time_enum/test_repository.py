@@ -1,5 +1,7 @@
 from src.repository.experience_time_enum.repository import ExperienceTimeEnumRepository
-from src.repository.enum_experience_time_cache.repository import EnumExperienceTimeCacheRepository
+from src.repository.enum_experience_time_cache.repository import (
+    EnumExperienceTimeCacheRepository,
+)
 from src.repository.base_repository.oracle.repository import OracleBaseRepository
 from tests.test_doubles.doubles import (
     enum_repository_get_cached_enum_dummy,

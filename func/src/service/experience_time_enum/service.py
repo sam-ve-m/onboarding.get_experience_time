@@ -1,6 +1,8 @@
 from etria_logger import Gladsheim
 
-from src.core.interfaces.service.experience_time_enum.interface import IExperienceTimeEnumService
+from src.core.interfaces.service.experience_time_enum.interface import (
+    IExperienceTimeEnumService,
+)
 from src.domain.response.model import ResponseModel
 from src.domain.response.status_code.enums import StatusCode
 from src.repository.experience_time_enum.repository import ExperienceTimeEnumRepository
