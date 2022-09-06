@@ -53,6 +53,7 @@ venv/
 
 # Pytest
 .pytest-cache/
+.coverage
 
 # Environment variables
 .env
