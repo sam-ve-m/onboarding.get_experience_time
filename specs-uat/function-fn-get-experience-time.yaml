@@ -51,5 +51,5 @@ spec:
     packageref:
       name: fn-get-experience-time-9dbe8811-2f2b-4667-b1d1-8cba2e401ab3
       namespace: default
-  requestsPerPod: 1
+  requestsPerPod: 10000
   resources: {}
