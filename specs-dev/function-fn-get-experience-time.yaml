@@ -1,0 +1,55 @@
+include:
+- ./func/*
+kind: ArchiveUploadSpec
+name: func-NQVC
+
+---
+apiVersion: fission.io/v1
+kind: Package
+metadata:
+  creationTimestamp: null
+  name: fn-get-experience-time-9dbe8811-2f2b-4667-b1d1-8cba2e401ab3
+  namespace: default
+spec:
+  deployment:
+    checksum: {}
+  environment:
+    name: env-get-experience-time
+    namespace: default
+  source:
+    checksum: {}
+    type: url
+    url: archive://func-NQVC
+status:
+  buildstatus: pending
+  lastUpdateTimestamp: "2022-07-12T17:51:14Z"
+
+---
+apiVersion: fission.io/v1
+kind: Function
+metadata:
+  creationTimestamp: null
+  name: fn-get-experience-time
+  namespace: default
+spec:
+  InvokeStrategy:
+    ExecutionStrategy:
+      ExecutorType: newdeploy
+      MaxScale: 3
+      MinScale: 1
+      SpecializationTimeout: 120
+      TargetCPUPercent: 80
+    StrategyType: execution
+  concurrency: 500
+  environment:
+    name: env-get-experience-time
+    namespace: default
+  functionTimeout: 60
+  idletimeout: 120
+  package:
+    functionName: main.get_enums
+    packageref:
+      name: fn-get-experience-time-9dbe8811-2f2b-4667-b1d1-8cba2e401ab3
+      namespace: default
+  requestsPerPod: 10000
+  resources: {}
