@@ -1,12 +1,12 @@
 from typing import List, Tuple
 
-from src.core.interfaces.repository.experience_time_enum.interface import (
+from func.src.core.interfaces.repository.experience_time_enum.interface import (
     IExperienceTimeEnumRepository,
 )
-from src.repository.enum_experience_time_cache.repository import (
+from func.src.repository.enum_experience_time_cache.repository import (
     EnumExperienceTimeCacheRepository,
 )
-from src.repository.base_repository.oracle.repository import OracleBaseRepository
+from func.src.repository.base_repository.oracle.repository import OracleBaseRepository
 
 
 class ExperienceTimeEnumRepository(IExperienceTimeEnumRepository):

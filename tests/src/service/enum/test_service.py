@@ -1,8 +1,8 @@
 from unittest.mock import patch
 import pytest
 
-from src.service.experience_time_enum.service import ExperienceTimeEnumService
-from src.repository.experience_time_enum.repository import ExperienceTimeEnumRepository
+from func.src.service.experience_time_enum.service import ExperienceTimeEnumService
+from func.src.repository.experience_time_enum.repository import ExperienceTimeEnumRepository
 
 from tests.test_doubles.doubles import (
     enum_service_get_enums_response_ok,

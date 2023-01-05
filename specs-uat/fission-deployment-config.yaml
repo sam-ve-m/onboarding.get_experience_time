@@ -4,4 +4,4 @@
 apiVersion: fission.io/v1
 kind: DeploymentConfig
 name: onboarding-get-experience-time
-uid: d2784fee-e8f1-4c17-a36a-77e92f07adf5
+uid: ac0c0e9e-9bc2-42af-8f51-0ef71fb5126a
