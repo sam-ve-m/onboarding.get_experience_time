@@ -2,19 +2,19 @@ apiVersion: fission.io/v1
 kind: HTTPTrigger
 metadata:
   creationTimestamp: null
-  name: 9d6ddd28-e93e-418e-92a9-9656b6fe787b
+  name: onb-us-enum-exp-rt
   namespace: default
 spec:
   createingress: false
   functionref:
     functionweights: null
-    name: fn-get-experience-time
+    name: onb-us-enum-exp-fn
     type: name
   host: ""
   ingressconfig:
     annotations: null
     host: '*'
-    path: /enum/experience_time
+    path: /us-enum-expary_data
     tls: ""
   method: ""
   methods:
