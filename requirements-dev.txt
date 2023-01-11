@@ -1,3 +1,4 @@
 -r requirements.txt
 pytest==7.1.2
 mutatest==3.1.0
+pytest-asyncio==0.20.3
